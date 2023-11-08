@@ -1,11 +1,9 @@
 // FETCH LOCAL JSON FILE AND CALL DRAWTABLE FUNCTION
 fetch("data.json")
-  .then(response => response.json())
-  .then(json => drawTable(json));
+  .then((response) => response.json())
+  .then((json) => drawTable(json));
 
-
-//DRAW TABLE ----------------->
-
+//DRAWTABLE FUNCTION ----------------->
 function drawTable(data) {
   let table = document.getElementById("table");
 
@@ -22,4 +20,18 @@ function drawTable(data) {
   }
 }
 
-drawTable(data);
+// ADDNEWW FUNCTION --------------->
+
+
+function addNew() {
+  var name = document.getElementById("inputName").value;
+  var age = document.getElementById("inputAge").value;
+  var street = document.getElementById("inputStreet").value;
+  var contry = document.getElementById("inputContry").value;
+  var id = 24;
+
+  const newAdd = [
+    {id:id, name: name, age:age, street: street, contry:contry}
+  ];
+  drawTable(newAdd);
+}

@@ -11,3 +11,9 @@ th{
 td{
     background-color: #E3F4F4;
 }
+h1{
+    text-align: center;
+}
+label {
+    font-weight: bold;
+}

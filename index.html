@@ -19,16 +19,24 @@
     <input type="text" id="inputContry" placeholder="Srbija" required><br/><br/>
     <button onclick="addNew()">Add New</button><br><br>
 
+    <div>
+      <label>Search: </label>
+      <input id="search-input" type="text" onkeyup="search()"><br><br>
+    </div>
+
+
     <table id="table">
       <tr>
         <th>ID</th>
-        <th>NAME</th>
-        <th>AGE</th>
-        <th>STREET</th>
-        <th>CONTRY</th>
+        <th onclick="sort(1)">NAME</th>
+        <th onclick="sort(2)">AGE</th>
+        <th onclick="sort(3)">STREET</th>
+        <th onclick="sort(4)">CONTRY</th>
+        <th>ACTION</th>
       </tr>
     </table>
 
     <script src="script.js"></script>
+
   </body>
 </html>
